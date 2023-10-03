@@ -9,6 +9,8 @@ function FetchTodo(){
     results.innerHTML =`<p>Title of todo ${data.title}</p><p> Id of todo is ${data.id}</p>`
     console.log(data)
   })
-
+  .catch(function(error){
+    console.log(error)
+  })
 
 }

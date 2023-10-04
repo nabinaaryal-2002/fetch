@@ -45,11 +45,11 @@ fetch("https://jsonplaceholder.typicode.com/posts", {
   body: JSON.stringify(res),
   headers: {
     "Content-type": "application/json"
-
   }
   
 }).then(function(data){
   return data.json();
+  
 }).then(function(res){
   console.log(res);
 })
